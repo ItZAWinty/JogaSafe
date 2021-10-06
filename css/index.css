@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap');
+
+
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+body{
+    background-color: black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 3vw;
+    height: 100%;
+    padding: 0.5vh;
+
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#social-bar{
+    position: absolute;
+    bottom: 7%;
+    width: 100%;
+    right: 0%;
+}
+
+/* Texto */
+#social-bar>ul>li:first-child, #bar-top>ul>li:nth-child(2){
+    margin: auto;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5vh;
+    text-transform: uppercase;
+}
+
+#social-bar>ul>li:first-child{
+    font-weight:lighter;
+}
+
+#bar-top>ul>li:nth-child(2){
+    font-weight: bolder;
+}
+
+#social-bar>ul>li div, #bar-top>ul>li div, #down-button>div{
+    width: 4vh;
+    height: 4vh;
+    margin: 10px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#down-button{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    right: 0%;
+}
+
+/* Icons */
+#menu-button>div{
+    background-image: url('../images/icons/icon-menu.svg');
+}
+
+#star{
+    background-image: url('../images/icons/icon-star.svg');
+}
+
+#facebook{
+    background-image: url('../images/icons/icon-facebook.svg');
+}
+
+#instagram{
+    background-image: url('../images/icons/icon-instagram.svg');
+}
+
+#twitter{
+    background-image: url('../images/icons/icon-twitter.svg');
+}
+
+#down-button>div{
+    background-image: url('../images/icons/baixo.svg');
+}
+
+#content{
+    height: 100vh;
+    width: 100vw;
+    
+    background: radial-gradient(circle, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 30%, rgba(16,16,16,1) 100%);
+    background-image: url("../images/bgs/vector-fire.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gradient-content{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(65deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 70%);
+}
+
+  
