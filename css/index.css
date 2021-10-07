@@ -98,6 +98,28 @@ body{
     background-image: url("../images/bgs/vector-fire.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align:center;
+}
+
+#content>h1{
+    float: left;
+    color: white;
+}
+
+#logo-jogasafe{
+    width: 35vw;
+    height: auto;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+
+    float: right;
+    margin-right: 5vw;
+
+    object-fit: contain;
 }
 
 #gradient-content{
