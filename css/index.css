@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap');
 
+/* Druk */
+@import url('https://db.onlinewebfonts.com/c/988d4c9843303bc94792a4ad537f1cfb?family=Druk+Bold+Regular');
+@import url('https://db.onlinewebfonts.com/c/5cfc10829ed4fce9e89ca0ae2223d389?family=Druk-WideMedium');
+@import url('https://db.onlinewebfonts.com/c/a86f94a776190a79c038dad18ec39950?family=Druk+Web+Bold+Regular');
+@import url('https://db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold');
+
+
+/* 
+.Druk-Bold-Regular{
+    font-family:"Druk Bold Regular";
+}
+.Druk-Wide-Medium{
+    font-family:"Druk-WideMedium";
+}
+.Druk-Web-Bold-Regular{
+    font-family:"Druk Web Bold Regular";
+}
+.Druk-Wide-Bold{
+    font-family:"Druk Wide Bold";
+}
+*/
 
 /*
 font-family: 'Fira Sans', sans-serif;
@@ -104,6 +125,12 @@ body{
 #content>h1{
     float: left;
     color: white;
+    font-family:"Druk Wide Bold";
+}
+
+#content>h1>span{
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px white;
 }
 
 #logo-jogasafe{
@@ -128,4 +155,71 @@ body{
     background: linear-gradient(65deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 70%);
 }
 
-  
+
+section{
+    width: 94vw;
+    height: 100vh;
+    position: relative;
+}
+
+.section-bg{
+    position: absolute;
+    top: 0;
+    left: -6vh;
+    right: 0;
+    bottom: 0;
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.section-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 3vw;
+    position: relative;
+}
+
+.section-left{
+    width: 35vw;
+    float: left;
+    
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section-left>*{
+    width: 100%;
+    color: white;
+}
+
+.logo-jogasafe{
+    width: 35vw;
+    max-width: 100vh;
+    height: auto;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+
+    float: right;
+    margin-right: 5vw;
+
+    object-fit: contain;
+}
+
+#campeonato h1{
+    font-family:"Druk Wide Bold";
+    font-size: 2.5vw; 
+}
+
+#campeonato span{
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.5px white;
+}
+
