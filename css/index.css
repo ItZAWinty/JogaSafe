@@ -122,6 +122,23 @@ body{
     text-align:center;
 }
 
+h1,h2, #inscricao a{
+    font-family:"Druk Wide Bold";
+    color: white;
+    text-transform: uppercase;
+}
+
+
+p,a{
+    font-family: "Fira Sans";
+    color: white;
+}
+
+.text-stroke{
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.5px white;
+}
+
 #content>h1{
     float: left;
     color: white;
@@ -154,7 +171,6 @@ body{
     width: 100vw;
     background: linear-gradient(65deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 70%);
 }
-
 
 section{
     width: 94vw;
@@ -193,7 +209,6 @@ section{
 
 .section-left>*{
     width: 100%;
-    color: white;
 }
 
 .logo-jogasafe{
@@ -214,12 +229,155 @@ section{
 }
 
 #campeonato h1{
-    font-family:"Druk Wide Bold";
-    font-size: 2.5vw; 
+    font-size: 2.5vw;
 }
 
-#campeonato span{
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 0.5px white;
+#como-funciona h1{
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+
+    margin-bottom: 2vh;
 }
 
+#como-funciona p{
+    font-size: 1.5vw;
+}
+
+#patrocinios h1{
+    font-size: 2vw;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+}
+
+#patrocinios span>img{
+    height: 2vw;
+}
+
+#patrocinios-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#patrocinios a{
+    width: 33%;
+}
+
+#patrocinios a>img{
+    width: 100%;
+    height: 10vh;
+    object-fit:contain;
+}
+
+.text-bg{
+    object-fit: cover;
+}
+
+.content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teaser iframe{
+    width: 64vw; 
+    height: 36vw;
+
+    max-width: 96vh;
+    max-height: 54vh;
+}
+
+#times h1{
+    width: 70vw;
+    font-size: 2.5vw;
+    letter-spacing: 2.5vw;
+    text-align: center;
+}
+
+.teams-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    left: 5vw;
+    right: 0;
+
+    width: 50vw;
+    margin: auto;
+}
+
+.team-logo{
+    width: 11vw;
+    height: auto;
+
+    filter: blur(5px);
+}
+
+#inscricao .section-content{
+    width: 91vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inscricao-panel{
+    width: 20vw;
+    height: 70vh;
+
+    border-top: 1vh solid #DC0031;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%);
+    padding: 2%;
+
+    color: #DC0031;
+}
+
+.inscricao-aberta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
+}
+
+#inscricao h2{
+    color: #DC0031;
+    font-size: 1.3vw;
+    padding: 4vh 0px;
+}
+
+#inscricao-infos{
+    flex-grow: 2;
+    padding-bottom: 4vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#inscricao a{
+    color: #DC0031;
+
+    border: 1px solid #DC0031;
+    padding: 2%;
+    width: 70%;
+
+    align-self: center;
+    text-align: center;
+}
+
+.inscricao-fechada h2{
+    font-size: 3vw !important;
+    color: rgba(220, 0, 49, 0.2);
+    text-align: center;
+}
+
+#breve h1{
+    font-size: 7vw;
+    background: linear-gradient(90deg,rgba(255,114,83,1) 0%, rgba(242,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2vw #8B1826;
+}
