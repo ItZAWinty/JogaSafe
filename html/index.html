@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,225 +8,233 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
+
     <title>Joga Safe TNT</title>
 </head>
+
 <body>
-    <main id="container">  
+    <div id="container">
         <div class="sidebar">
 
             <div id="bar-top">
                 <ul>
-                    <li><a id="menu-button"><div></div></a></li>
+                    <li><a id="menu-button">
+                            <div></div>
+                        </a></li>
                     <li>Joga Safe</li>
-                    <li><div id="star"></div></li>
+                    <li>
+                        <div id="star"></div>
+                    </li>
                 </ul>
-                
+
             </div>
 
             <div id="social-bar">
                 <ul>
                     <li>Sites Oficiais</li>
-                    <li><div id="star"></div></li>
-                    <li><a href="https://www.facebook.com/tntenergydrink/" target="_blank"><div id="facebook"></div></a></li>
-                    <li><a href="https://www.instagram.com/tntenergydrink/?hl=pt-br" target="_blank"><div id="instagram"></div></a></li>
-                    <li><a href="https://twitter.com/energydrinktnt" target="_blank"><div id="twitter"></div></a></li>
+                    <li>
+                        <div id="star"></div>
+                    </li>
+                    <li><a href="https://www.facebook.com/tntenergydrink/" target="_blank">
+                            <div id="facebook"></div>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/tntenergydrink/?hl=pt-br" target="_blank">
+                            <div id="instagram"></div>
+                        </a></li>
+                    <li><a href="https://twitter.com/energydrinktnt" target="_blank">
+                            <div id="twitter"></div>
+                        </a></li>
                 </ul>
             </div>
-            
-            <a id="down-button"><div></div></a>
+
+            <a id="down-button" onclick="goToNextSection()">
+                <div></div>
+            </a>
         </div>
-        <!--
-            <div id="content">
-
-            <h1>
-                O CAMPEONATO DE E-SPORTS DA
-                <span>TNT ENERGY DRINK</span>
-            </h1>
-
-            <img id="logo-jogasafe" src="../images/logos/logo-jogasafe.png" width="749" height="824">
-
-            <div id="gradient-content"></div>
-        </div>
-        -->
 
         <main>
-            <section id="campeonato">
+            <img id="bg-fire" src="../images/bgs/vector-fire.svg" class="section-bg">
+            <div id="sections">
 
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
+                <section id="campeonato">
 
-                <div class="section-content">
-                    <div class="section-left">
-                        <h1>
-                            O CAMPEONATO DE E-SPORTS DA
-                            <span class="text-stroke">TNT ENERGY DRINK</span>
-                        </h1>
+                    <div class="section-content">
+                        <div class="section-left">
+                            <h1>
+                                O CAMPEONATO DE E-SPORTS DA
+                                <span class="text-stroke">TNT ENERGY DRINK</span>
+                            </h1>
+                        </div>
+
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
 
-                    <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
-                </div>
+                </section>
 
-            </section>
+                <section id="como-funciona">
 
-            <section id="como-funciona">
+                    <div class="section-content">
+                        <div class="section-left">
+                            <h1>
+                                // Como funciona?
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis
+                                laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi,
+                                perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
+                                fugit?
 
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
+                            </p>
+                        </div>
 
-                <div class="section-content">
-                    <div class="section-left">
-                        <h1>
-                            // Como funciona?
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore fugit?
-    
-                        </p>
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
-                    
-                    <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
-                </div>
 
-            </section>
+                </section>
 
-            <section id="patrocinios">
+                <section id="patrocinios">
 
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
+                    <div class="section-content">
+                        <div class="section-left">
+                            <h1 class="text-stroke">
+                                Patrocinado por
+                                <span><img src="../images/icons/icon-star.svg"></span>
+                            </h1>
 
-                <div class="section-content">
-                    <div class="section-left">
-                        <h1 class="text-stroke">
-                            Patrocinado por
-                            <span><img src="../images/icons/icon-star.svg"></span>
-                        </h1>
-    
-                        <div id="patrocinios-flex">
-                            <a href="https://www.facebook.com/tntenergydrink/" target="_blank"><img src="../images/logos/logo1-driven.png" alt=""></a>
-                            <a href="https://www.tntenergydrink.com.br/" target="_blank"><img src="../images/logos/logo-tnt.svg" alt=""></a>
-                            <a href="https://www.fiap.com.br/" target="_blank"><img src="../images/logos/logo-fiap.svg" alt=""></a>
+                            <div id="patrocinios-flex">
+                                <a href="https://www.facebook.com/tntenergydrink/" target="_blank"><img
+                                        src="../images/logos/logo1-driven.png" alt=""></a>
+                                <a href="https://www.tntenergydrink.com.br/" target="_blank"><img
+                                        src="../images/logos/logo-tnt.svg" alt=""></a>
+                                <a href="https://www.fiap.com.br/" target="_blank"><img
+                                        src="../images/logos/logo-fiap.svg" alt=""></a>
+                            </div>
+                        </div>
+
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
+                    </div>
+
+                </section>
+
+                <section id="teaser">
+
+                    <img src="../images/bgs/bg-teaser.svg" class="section-bg text-bg">
+
+                    <div class="section-content content-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GyghX9Qv6bs">
+
+                        </iframe>
+                    </div>
+
+                </section>
+
+                <section id="times">
+
+                    <div class="section-bg teams-list">
+                        <img class="team-logo" src="../images/logos/logo-bitterbug.png">
+                        <img class="team-logo" src="../images/logos/logo-redpanda.png">
+                        <img class="team-logo" src="../images/logos/logo-pinkotter.png">
+                        <img class="team-logo" src="../images/logos/logo-greenferret.png">
+                        <img class="team-logo" src="../images/logos/logo-lemonviper.png">
+                        <img class="team-logo" src="../images/logos/logo-sunsetwolf.png">
+                        <img class="team-logo" src="../images/logos/logo-orangelynx.png">
+                        <img class="team-logo" src="../images/logos/logo-purpleraccoon.png">
+                    </div>
+                    <img src="../images/bgs/bg-times.svg" class="section-bg text-bg">
+
+                    <div class="section-content content-center">
+                        <h1 class="text-stroke">Coming Soon</h1>
+                    </div>
+
+                </section>
+
+                <section id="inscricao">
+
+                    <div class="section-content">
+
+                        <div class="inscricao-panel inscricao-aberta">
+                            <h2 class="text-red">Inscrição</h2>
+
+                            <div id="inscricao-infos">
+                                <p>Nome Completo</p>
+                                <p>Idade</p>
+                                <p>Localização</p>
+                                <p>Ramo</p>
+                                <p>Redes Sociais</p>
+                                <p>Motivação</p>
+                            </div>
+
+                            <a class="text-red">Em breve</a>
+                        </div>
+
+                        <div class="inscricao-panel inscricao-fechada content-center">
+                            <h2 class="text-red">Em breve...</h2>
+                        </div>
+
+                        <div class="inscricao-panel inscricao-fechada content-center">
+                            <h2 class="text-red">Em breve...</h2>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="breve">
+
+                    <div class="section-content content-center">
+                        <h1>Em Breve</h1>
+                    </div>
+
+                </section>
+
+                <section id="footer">
+
+                    <div class="section-content">
+                        <div>
+                            <h1 class="text-red">Teu streamer tá contigo</h1>
+                            <h2 class="text-red">Tnt Energy Drink #PODEVIR</h2>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a>Início</a>
+                                <a>Equipes</a>
+                                <a>Tabela</a>
+                                <a>Contato</a>
+                            </div>
+
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a>Facebook</a>
+                                <a>Instagram</a>
+                                <a>Twitter</a>
+                                <a>Likedin</a>
+                            </div>
+
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a>E-Mail</a>
+                                <a>Equipe Driven</a>
+                                <a id="email">drivendsgn@gmail.com</a>
+                                <div id="filler"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
-                </div>
+                </section>
 
-            </section>
+            </div>
 
-            <section id="teaser">
+            <div id="gradient-content"></div>
 
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
-                <img src="../images/bgs/bg-teaser.svg" class="section-bg text-bg">
-
-                <div class="section-content content-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GyghX9Qv6bs">
-
-                    </iframe>
-                </div>
-
-            </section>
-
-            <section id="times">
-
-                
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
-                <div class="section-bg teams-list">
-                    <img class="team-logo" src="../images/logos/logo-bitterbug.png">
-                    <img class="team-logo" src="../images/logos/logo-redpanda.png">
-                    <img class="team-logo" src="../images/logos/logo-pinkotter.png">
-                    <img class="team-logo" src="../images/logos/logo-greenferret.png">
-                    <img class="team-logo" src="../images/logos/logo-lemonviper.png">
-                    <img class="team-logo" src="../images/logos/logo-sunsetwolf.png">
-                    <img class="team-logo" src="../images/logos/logo-orangelynx.png">
-                    <img class="team-logo" src="../images/logos/logo-purpleraccoon.png">
-                </div>
-                <img src="../images/bgs/bg-times.svg" class="section-bg text-bg">
-
-                <div class="section-content content-center">
-                    <h1 class="text-stroke">Coming Soon</h1>
-                </div>
-
-            </section>
-
-            <section id="inscricao">
-
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
-
-                <div class="section-content">
-                    
-                    <div class="inscricao-panel inscricao-aberta">
-                        <h2>Inscrição</h2>
-
-                        <div id="inscricao-infos">
-                            <p>Nome Completo</p>
-                            <p>Idade</p>
-                            <p>Localização</p>
-                            <p>Ramo</p>
-                            <p>Redes Sociais</p>
-                            <p>Motivação</p>
-                        </div>
-                        
-                        <a>Em breve</a>
-                    </div>
-
-                    <div class="inscricao-panel inscricao-fechada content-center">
-                        <h2>Em breve...</h2>
-                    </div>
-
-                    <div class="inscricao-panel inscricao-fechada content-center">
-                        <h2>Em breve...</h2>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section id="breve">
-
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
-
-                <div class="section-content content-center">
-                    <h1>Em Breve</h1>
-                </div>
-
-            </section>
-
-            <section id="footer">
-
-                <img src="../images/bgs/vector-fire.svg" class="section-bg">
-
-                <div class="section-content">
-                    <h1>Teu streamer tá contigo</h1>
-                    <h1>Tnt Energy Drink #PODEVIR</h1>
-
-                    <div class="footer-bottom">
-                        <ul class="footer-element">
-                            <li><img src="../images/icons/icon-star.svg"></li>
-                            <li><a>Início</a></li>
-                            <li><a>Equipes</a></li>
-                            <li><a>Tabela</a></li>
-                            <li><a>Contato</a></li>
-                        </ul>
-
-                        <ul class="footer-element">
-                            <li><img src="../images/icons/icon-star.svg"></li>
-                            <li><a>Facebook</a></li>
-                            <li><a>Instagram</a></li>
-                            <li><a>Twitter</a></li>
-                            <li><a>Linkedin</a></li>
-                        </ul>
-
-                        <ul class="footer-element">
-                            <li><img src="../images/icons/icon-star.svg"></li>
-                            <li><a>E-Mail</a></li>
-                            <li><a>Equipe Driven</a></li>
-                            <li><a>drivendsgn@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
         </main>
 
-    </main>
-    
-    
+    </div>
+
+
 </body>
+
+<script src="../js/index.js"></script>
+
 </html>
