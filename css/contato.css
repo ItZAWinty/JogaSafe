@@ -1,28 +1,13 @@
 #container{
-    display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: #242424;
-    background-image: url("../images/bgs/vector-fire.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 h1{
-    text-align: center;
     text-transform: uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#B10027;
-    float: left;
-    padding-left: 50%;
-    padding-top: 30%;
-    width: 350px;
 }
 h2{
     color:#B10027;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 10%;
-    padding-left: 58%;
-    width: 250px;
 }
 h3{
     display: flex;
@@ -31,6 +16,65 @@ h3{
     padding-right: 5%;
     padding-top: 5%;
     width: 300px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-direction: column;
+}
+
+.section-content{
+    height: 85vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30vw;
+}
+
+.section-content>div{
+    flex-grow: 1;
+}
+
+#contact-content{
+    margin-right: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2vh;
+
+    color: white;
+}
+
+#contact-content h1{
+    font-size: 2vh;
+    color: white;
+}
+
+#contact-content img{
+    height: 5vh;
+    object-fit: contain;
+    margin: 3vh 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+}
+
+form label{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+form input{
+    height: 4vh;
+}
+
+#button-submit{
+    background: #DC0031;
+    color: white;
+    border: transparent;
+    text-shadow: none;
+    font-family:"Druk-WideMedium";
 }

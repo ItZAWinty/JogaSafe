@@ -1,10 +1,6 @@
 #containerdois{
     height: 100vh;
     width: 100vw;
-    background-color: #242424;
-    background-image: url("../images/bgs/vector-fire.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 table{ 
     border-collapse: collapse;
@@ -28,4 +24,8 @@ td{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:30px;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+#capa .section-bg{
+    object-fit: contain;
 }

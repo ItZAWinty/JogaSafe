@@ -1,89 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Times</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/tabelatimes.css">
 </head>
+
 <body>
-    <div id=containerdois>
-        <div class=tabelatimes>
-            <table>
-                <tr>
-                   <th>Time</th>
-                   <th>P1</th>
-                   <th>P2</th>
-                   <th>P3</th>
-                   <th>P4</th>
-                   <th>Total</th>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-redpanda.png" alt="panda vermelho" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>153</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-greenferret.png" alt="furão" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>145</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-purpleraccoon.png" alt="guaxinim" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>123</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-sunsetwolf.png" alt="lobo" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>109</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-bitterbug.png" alt="bixo" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>89</td>
-                </tr>
-                <tr> <td><img src="..\images\logos\logo-lemonviper.png" alt="cobra" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>78</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-pinkotter.png" alt="lontra" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>62</td>
-                </tr>
-                <tr>
-                    <td><img src="..\images\logos\logo-orangelynx.png" alt="lince" width="100px" height="100px"></td>
-                    <td>P1</td>
-                    <td>P2</td>
-                    <td>P3</td>
-                    <td>P4</td>
-                    <td>50</td>
-                </tr>
-            </table>
+    <div id="container">
+
+        <div id="menu" class=" ">
+            <div>
+                <a class="menu-item text-stroke" href="_blank">Início</a>
+                <a class="menu-item text-stroke" href="_blank">Times</a>
+                <a class="menu-item text-stroke" href="_blank">Tabela</a>
+                <a class="menu-item text-stroke" href="_blank">Contato</a>
+            </div>
+
+            <div class="gradient-content"></div>
         </div>
+
+        <div class="sidebar" id="navbar">
+
+            <div id="bar-top">
+                <ul>
+                    <li><a id="navbar-button" onclick="MenuButton()">
+                            <div></div>
+                        </a></li>
+                    <li>Joga Safe</li>
+                    <li>
+                        <div id="star"></div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="social-bar">
+                <ul>
+                    <li>Sites Oficiais</li>
+                    <li>
+                        <div id="star"></div>
+                    </li>
+                    <li><a href="https://www.facebook.com/tntenergydrink/" target="_blank">
+                            <div id="facebook"></div>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/tntenergydrink/?hl=pt-br" target="_blank">
+                            <div id="instagram"></div>
+                        </a></li>
+                    <li><a href="https://twitter.com/energydrinktnt" target="_blank">
+                            <div id="twitter"></div>
+                        </a></li>
+                </ul>
+            </div>
+
+            <a id="down-button" onclick="goToNextSection()">
+                <div></div>
+            </a>
+        </div>
+
+        <div class="sidebar" id="balls">
+            <div>
+                <a id="ball-capa" class="ball-disabled" onclick="goToNextSection(true, 'capa')">
+                    <div></div>
+                </a>
+                <a id="ball-tabela" class="ball-disabled" onclick="goToNextSection(true, 'como-tabela')">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+
+        <main>
+            <img id="bg-fire" src="../images/bgs/vector-fire.svg" class="section-bg">
+
+            <div id="sections">
+
+                
+
+                <section id="capa">
+                    <img src="../images/bgs/bg-tabela.svg" class="section-bg text-bg">
+                    <div class="section-content">
+                    </div>
+
+                </section>
+
+                <section id="tabela" class="tabelatimes ">
+
+                    <div class="section-content content-center">
+                        <table>
+                            <tr>
+                                <th>Time</th>
+                                <th>P1</th>
+                                <th>P2</th>
+                                <th>P3</th>
+                                <th>P4</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-redpanda.png" alt="panda vermelho" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>153</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-greenferret.png" alt="furão" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>145</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-purpleraccoon.png" alt="guaxinim" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-sunsetwolf.png" alt="lobo" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>109</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-bitterbug.png" alt="bixo" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-lemonviper.png" alt="cobra" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-pinkotter.png" alt="lontra" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>62</td>
+                            </tr>
+                            <tr>
+                                <td><img src="..\images\logos\logo-orangelynx.png" alt="lince" width="100px"
+                                        height="100px"></td>
+                                <td>P1</td>
+                                <td>P2</td>
+                                <td>P3</td>
+                                <td>P4</td>
+                                <td>50</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
     </div>
 </body>
+<script src="../js/index.js"></script>
+
 </html>
