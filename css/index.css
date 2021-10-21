@@ -27,6 +27,8 @@ font-family: 'Fira Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 */
 
+/* #region Gerais */
+
 html{
     scroll-behavior: smooth;
 }
@@ -34,6 +36,119 @@ html{
 body{
     background-color: black;
 }
+
+#down-button>div{
+    background-image: url('../images/icons/baixo.svg');
+}
+
+h1,h2, #inscricao a, .footer-bottom a, #menu>div a{
+    font-family:"Druk Wide Bold";
+    color: white;
+    text-transform: uppercase;
+}
+
+p,a{
+    font-family: "Fira Sans";
+    color: white;
+}
+
+.text-stroke{
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.text-red{
+    color: #DC0031 !important;
+}
+
+#bg-fire{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -30;
+}
+
+.gradient-content{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-145deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 70%);
+    pointer-events:none;
+}
+
+/* #endregion */
+
+/* #region Menu */
+
+#menu{
+    position: sticky;
+    overflow: hidden;
+    float: right;
+    width: 0vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: black;
+    background-image: url("../images/bgs/bg-menu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;    
+}
+
+#menu>div{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+#menu a{
+    width: fit-content;
+    padding-left: 10vw;
+
+    font-size: 5vw;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1vw white;
+}
+
+#menu .gradient-content{
+    width: 94vw;
+}
+
+.menu-on{
+    animation-name: menu-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.menu-off{
+    animation-name: menu-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+@keyframes menu-anim {
+    from {width: 0vw;}
+    to {width: 100vw;}
+}
+
+/* #endregion */
+
+/* #region Sidebars */
 
 .sidebar {
     position: fixed;
@@ -47,10 +162,54 @@ body{
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
-
-    z-index: 20;
+    z-index: 15;
 }
 
+/* #region Balls */
+
+#balls{
+    background-color: transparent;
+    left: 0;
+    z-index: 9;
+}
+
+#balls>div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+#balls a{
+    width: 0.5vw;
+    height: 0.5vw;
+
+    border: 3px solid #DC0031;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.ball-enabled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball-enabled>div{
+    width: 50%;
+    height: 50%;
+
+    border: 1px solid #DC0031;
+    border-radius: 100%;
+    background-color: #DC0031;
+}
+
+/* #endregion */
+
+/* #region Nav */
 #social-bar{
     position: absolute;
     bottom: 7%;
@@ -89,12 +248,13 @@ body{
     position: absolute;
     bottom: 1%;
     width: 100%;
+    height: auto;
     right: 0%;
     
 }
 
-/* Icons */
-#menu-button>div{
+/* #region Icons */
+#navbar-button>div{
     background-image: url('../images/icons/icon-menu.svg');
 }
 
@@ -114,81 +274,15 @@ body{
     background-image: url('../images/icons/icon-twitter.svg');
 }
 
-#down-button>div{
-    background-image: url('../images/icons/baixo.svg');
-}
+/* #endregion */
 
-#content{
-    height: 100vh;
-    width: 100vw;
-    
-    background: radial-gradient(circle, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 30%, rgba(16,16,16,1) 100%);
-    background-image: url("../images/bgs/vector-fire.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align:center;
-}
+/* #endregion */
 
-h1,h2, #inscricao a, .footer-bottom a{
-    font-family:"Druk Wide Bold";
-    color: white;
-    text-transform: uppercase;
-}
+/* #endregion */
 
-p,a{
-    font-family: "Fira Sans";
-    color: white;
-}
+/* #region Sections */
 
-.text-stroke{
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 0.5px white;
-}
-
-.text-red{
-    color: #DC0031 !important;
-}
-
-#content>h1{
-    float: left;
-    color: white;
-    font-family:"Druk Wide Bold";
-}
-
-#content>h1>span{
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px white;
-}
-
-#logo-jogasafe{
-    width: 35vw;
-    height: auto;
-    
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto 0;
-
-    float: right;
-    margin-right: 5vw;
-
-    object-fit: contain;
-}
-
-#bg-fire{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
-#gradient-content{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(-145deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 70%);
-}
+/* #region Sections Main */
 
 section{
     width: 94vw;
@@ -205,14 +299,15 @@ section{
     width: 105%;
     height: 100%;
     object-fit: cover;
-    z-index: -10;
+    z-index: -10 !important;
 }
 
 .section-content{
     width: 100%;
     height: 100%;
-    margin: 0 3vw;
+    margin: 0 4vw;
     position: relative;
+    z-index: 5;
 }
 
 .section-left{
@@ -246,9 +341,27 @@ section{
     object-fit: contain;
 }
 
+.text-bg{
+    object-fit: cover;
+}
+
+.content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #endregion */
+
+/* #region Campeonato */
+
 #campeonato h1{
     font-size: 2.5vw;
 }
+
+/* #endregion */
+
+/* #region Como funciona */
 
 #como-funciona h1{
     font-family: "Fira Sans";
@@ -261,6 +374,10 @@ section{
 #como-funciona p{
     font-size: 1.5vw;
 }
+
+/* #endregion */
+
+/* #region Patrocínios */
 
 #patrocinios h1{
     font-size: 2vw;
@@ -288,15 +405,9 @@ section{
     object-fit:contain;
 }
 
-.text-bg{
-    object-fit: cover;
-}
+/* #endregion */
 
-.content-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* #region Teaser */
 
 #teaser iframe{
     width: 64vw; 
@@ -304,8 +415,11 @@ section{
 
     max-width: 96vh;
     max-height: 54vh;
-    z-index: 20;
 }
+
+/* #endregion */
+
+/* #region Times */
 
 #times h1{
     width: 70vw;
@@ -332,6 +446,10 @@ section{
 
     filter: blur(5px);
 }
+
+/* #endregion */
+
+/* #region Inscrição */
 
 #inscricao .section-content{
     width: 91vw;
@@ -388,6 +506,14 @@ section{
     text-align: center;
 }
 
+/* #endregion */
+
+/* #region Breve */
+
+#breve>.section-content{
+    z-index: -10;
+}
+
 #breve h1{
     font-size: 7vw;
     background: linear-gradient(90deg,rgba(255,114,83,1) 0%, rgba(242,0,0,1) 100%);
@@ -396,6 +522,10 @@ section{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.2vw #8B1826;
 }
+
+/* #endregion */
+
+/* #region Footer */
 
 #footer>.section-content {
     display: flex;
@@ -440,4 +570,25 @@ section{
 #filler{
     height: 16px;
     order: 5;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+@media only screen and (max-width: 768px){
+    
+    .section-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-left{
+        float: none;
+    }
+
+    .logo-jogasafe{
+        float: none;
+    }
+
 }
