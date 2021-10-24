@@ -14,12 +14,28 @@
 
 <body>
     <div id="container">
-        <div class="sidebar">
+
+        <div id="menu" class=" ">
+            <div>
+                <a class="menu-item text-stroke" href="_blank">Início</a>
+                <a class="menu-item text-stroke" href="_blank">Times</a>
+                <a class="menu-item text-stroke" href="_blank">Tabela</a>
+                <a class="menu-item text-stroke" href="_blank">Contato</a>
+            </div>
+
+            <div class="gradient-content"></div>
+        </div>
+ 
+        <div class="sidebar" id="navbar">
 
             <div id="bar-top">
                 <ul>
+<<<<<<< HEAD
                     <li>
                         <a id="menu-button">
+=======
+                    <li><a id="navbar-button" onclick="MenuButton()">
+>>>>>>> 257a080d1c842a94db07bbcb3d373e92dd98c67e
                             <div></div>
                         </a>
                     </li>
@@ -60,6 +76,35 @@
             </a>
         </div>
 
+        <div class="sidebar" id="balls">
+            <div>
+                <a id="ball-campeonato" class="ball-disabled" onclick="goToNextSection(true, 'campeonato')">
+                    <div></div>
+                </a>
+                <a id="ball-como-funciona" class="ball-disabled" onclick="goToNextSection(true, 'como-funciona')">
+                    <div></div>
+                </a>
+                <a id="ball-patrocinios" class="ball-disabled" onclick="goToNextSection(true, 'patrocinios')">
+                    <div></div>
+                </a>
+                <a id="ball-teaser" class="ball-disabled" onclick="goToNextSection(true, 'teaser')">
+                    <div></div>
+                </a>
+                <a id="ball-times" class="ball-disabled" onclick="goToNextSection(true, 'times')">
+                    <div></div>
+                </a>
+                <a id="ball-inscricao" class="ball-disabled" onclick="goToNextSection(true, 'inscricao')">
+                    <div></div>
+                </a>
+                <a id="ball-breve" class="ball-disabled" onclick="goToNextSection(true, 'breve')">
+                    <div></div>
+                </a>
+                <a id="ball-footer" class="ball-disabled" onclick="goToNextSection(true, 'footer')">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+
         <main>
             <img id="bg-fire" src="../images/bgs/vector-fire.svg" class="section-bg">
             <div id="sections">
@@ -67,14 +112,14 @@
                 <section id="campeonato">
 
                     <div class="section-content">
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
+
                         <div class="section-left">
                             <h1>
                                 O CAMPEONATO DE E-SPORTS DA
                                 <span class="text-stroke">TNT ENERGY DRINK</span>
                             </h1>
                         </div>
-
-                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
 
                 </section>
@@ -82,6 +127,8 @@
                 <section id="como-funciona">
 
                     <div class="section-content">
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
+
                         <div class="section-left">
                             <h1>
                                 // Como funciona?
@@ -92,8 +139,6 @@
 
                             </p>
                         </div>
-
-                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
 
                 </section>
@@ -101,6 +146,8 @@
                 <section id="patrocinios">
 
                     <div class="section-content">
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
+
                         <div class="section-left">
                             <h1 class="text-stroke">
                                 Patrocinado por
@@ -113,8 +160,6 @@
                                 <a href="https://www.fiap.com.br/" target="_blank"><img src="../images/logos/logo-fiap.svg" alt=""></a>
                             </div>
                         </div>
-
-                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
 
                 </section>
@@ -229,9 +274,13 @@
 
             </div>
 
-            <div id="gradient-content"></div>
+
 
         </main>
+
+
+
+        <div class="gradient-content"></div>
 
     </div>
 
