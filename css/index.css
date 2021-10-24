@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap');
 
 /* Druk */
-@import url('https://db.onlinewebfonts.com/c/5cfc10829ed4fce9e89ca0ae2223d389?family=Druk-WideMedium');
-
 @font-face {font-family: "Druk Bold Regular";
     src: url("../fonts/Druk-Bold-Regular/Druk-Bold-Regular.eot"); /* IE9*/
     src: url("../fonts/Druk-Bold-Regular/Druk-Bold-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
