@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - Joga Safe</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contato.css">
 </head>
+
 <body>
     <div id="container">
 
         <div id="menu" class=" ">
             <div>
-                <a class="menu-item text-stroke" href="_blank">Início</a>
-                <a class="menu-item text-stroke" href="_blank">Times</a>
-                <a class="menu-item text-stroke" href="_blank">Tabela</a>
-                <a class="menu-item text-stroke" href="_blank">Contato</a>
+                <a class="menu-item text-stroke" href="../index.html">Início</a>
+                <a class="menu-item text-stroke" href="./times.html">Times</a>
+                <a class="menu-item text-stroke" href="./tabela.html">Tabela</a>
+                <a class="menu-item text-stroke" href="./contato.html">Contato</a>
             </div>
 
             <div class="gradient-content"></div>
         </div>
- 
+
         <div class="sidebar" id="navbar">
 
             <div id="bar-top">
@@ -63,25 +65,10 @@
 
         <div class="sidebar" id="balls">
             <div>
-                <a id="ball-campeonato" class="ball-disabled" onclick="goToNextSection(true, 'campeonato')">
+                <a id="ball-capa" class="ball-disabled" onclick="goToNextSection(true, 'capa')">
                     <div></div>
                 </a>
-                <a id="ball-como-funciona" class="ball-disabled" onclick="goToNextSection(true, 'como-funciona')">
-                    <div></div>
-                </a>
-                <a id="ball-patrocinios" class="ball-disabled" onclick="goToNextSection(true, 'patrocinios')">
-                    <div></div>
-                </a>
-                <a id="ball-teaser" class="ball-disabled" onclick="goToNextSection(true, 'teaser')">
-                    <div></div>
-                </a>
-                <a id="ball-times" class="ball-disabled" onclick="goToNextSection(true, 'times')">
-                    <div></div>
-                </a>
-                <a id="ball-inscricao" class="ball-disabled" onclick="goToNextSection(true, 'inscricao')">
-                    <div></div>
-                </a>
-                <a id="ball-breve" class="ball-disabled" onclick="goToNextSection(true, 'breve')">
+                <a id="ball-contato" class="ball-disabled" onclick="goToNextSection(true, 'contato')">
                     <div></div>
                 </a>
                 <a id="ball-footer" class="ball-disabled" onclick="goToNextSection(true, 'footer')">
@@ -95,38 +82,85 @@
 
             <div id="sections">
 
-                <section id="contato-form content-center">
+                <section id="capa">
+                    <img src="../images/bgs/bg-contato.svg" class="section-bg text-bg">
+                    <div class="section-content">
+                    </div>
+
+                </section>
+
+                <section id="contato">
 
                     <div class="section-content">
-                        <div>
+                        <div id="entre-contato">
                             <h1>Entre em contato conosco</h1>
                             <h2>Equipe Driven</h2>
-                            <div></div>
                         </div>
 
-                        <div id="contact-content">
-                            <h1>Equipe Driven</h1>
-                            <p>drivendsgn@gmail.com</p>
-                            <img src="../images/icons/icon-star.svg">
-                            <h1>Ou deixe-nos uma mensagem</h1>
-                            <form action="/action_page.php">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" placeholder="ex. João">
-                                <label for="email">E-mail:</label>
-                                <input type="text" id="email" name="email" placeholder="ex. email@email.com">
-                                <label for="mensagem">Mensagem:</label>
-                                <input type="text" id="mensagem" name="mensagem" placeholder="Digite sua mensagem">
-                                <input type="submit" id="button-submit" value="ENVIAR">
-                            </form>
+                        <div class="section-right">
+                            <div id="contact-content">
+                                <h1>Equipe Driven</h1>
+                                <p>drivendsgn@gmail.com</p>
+                                <img src="../images/icons/icon-star.svg">
+                                <h1>Ou deixe-nos uma mensagem</h1>
+                                <form action="javascript:alert('Sua mensagem foi enviada!');">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" id="nome" name="nome" placeholder="ex. João">
+                                    <label for="email">E-mail:</label>
+                                    <input type="text" id="email" name="email" placeholder="ex. email@email.com">
+                                    <label for="mensagem">Mensagem:</label>
+                                    <input type="text" id="mensagem" name="mensagem" placeholder="Digite sua mensagem">
+                                    <input type="submit" id="button-submit" value="ENVIAR">
+                                </form>
+                            </div>
                         </div>
 
                     </div>
 
                 </section>
 
+                <section id="footer">
 
+                    <div class="section-content">
+                        <div>
+                            <h1 class="text-red">Teu streamer tá contigo</h1>
+                            <h2 class="text-red">Tnt Energy Drink #PODEVIR</h2>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a href="../index.html">Início</a>
+                                <a href="./times.html">Times</a>
+                                <a href="./tabela.html">Tabela</a>
+                                <a href="./contato.html">Contato</a>
+                            </div>
+
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a>Facebook</a>
+                                <a>Instagram</a>
+                                <a>Twitter</a>
+                                <a>Linkedin</a>
+                            </div>
+
+                            <div class="footer-element">
+                                <img src="../images/icons/icon-star.svg">
+                                <a>E-Mail</a>
+                                <a>Equipe Driven</a>
+                                <a id="email">drivendsgn@gmail.com</a>
+                                <div id="filler"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
             </div>
+            <div class="gradient-content"></div>
         </main>
     </div>
 </body>
+
+<script src="../js/index.js"></script>
+
 </html>

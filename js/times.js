@@ -1,27 +1,65 @@
-$(window).on("scroll touchmove", function() {
-    if ($(document).scrollTop() >= $("#bitter").position().top && $(document).scrollTop() < $("#two").position().top) {
-        $('body').css('background-image', 'url(https://4.bp.blogspot.com/-Ivk46EkgQfk/WWjbo4TdJbI/AAAAAAAAFUo/gUD7JABklsIA1gWIr5LS1slyY4QuTMkEwCLcBGAs/s1600/gambar%2Bwallpaper%2Bmobil.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#green").position().top && $(document).scrollTop() < $("#three").position().top) {
-        $('body').css('background-image', 'url(https://i1.wp.com/cdn.catawiki.net/assets/marketing/uploads-files/45485-8bdcc8479f93d5a247ab844321b8b9d5e53c49a9-story_inline_image.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#lemon").position().top && $(document).scrollTop() < $("#four").position().top) {
-        $('body').css('background-image', 'url(times/lemon-viper.png)')
-    };
-    if ($(document).scrollTop() >= $("#orange").position().top && $(document).scrollTop() < $("#five").position().top) {
-        $('body').css('background-image', 'url(https://s-media-cache-ak0.pinimg.com/originals/e1/7a/03/e17a0385726db90de1854177d4af2b4f.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#pink").position().top && $(document).scrollTop() < $("#five").position().top) {
-        $('body').css('background-image', 'url(https://s-media-cache-ak0.pinimg.com/originals/e1/7a/03/e17a0385726db90de1854177d4af2b4f.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#purple").position().top && $(document).scrollTop() < $("#five").position().top) {
-        $('body').css('background-image', 'url(https://s-media-cache-ak0.pinimg.com/originals/e1/7a/03/e17a0385726db90de1854177d4af2b4f.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#red").position().top && $(document).scrollTop() < $("#five").position().top) {
-        $('body').css('background-image', 'url(https://s-media-cache-ak0.pinimg.com/originals/e1/7a/03/e17a0385726db90de1854177d4af2b4f.jpg)')
-    };
-    if ($(document).scrollTop() >= $("#sunset").position().top) {
-        $('body').css('background-image', 'url(https://www.wallpaperup.com/uploads/wallpapers/2015/02/13/621414/6fc33c3ae65a58f9bb137f5cf011aebc.jpg)')
-    };
+const sectionsTime = document.querySelectorAll("section");
+const bg = document.querySelector("#bg-fire");
 
-});
+const sectionWatcherCallbackTimes = (section, sectionIndex) => {
+    section.forEach(section => {
+        if (!section.isIntersecting) { return }
+        console.log(section.target.id)
+        changeBG(section.target.id)
+    })
+}
+
+const sectionWatcherOptionsTimes = {
+    threshold: 0.6
+}
+
+const sectionWatcherTimes = new
+    IntersectionObserver(
+        sectionWatcherCallbackTimes,
+        sectionWatcherOptionsTimes
+    )
+
+sectionsTime.forEach(section => {
+    sectionWatcherTimes.observe(section);
+})
+
+function changeBG(curSec) {
+    switch (curSec) {
+
+        default:
+            bg.src = "../images/bgs/vector-fire.svg";
+            break;
+
+        case "bitter":
+            bg.src = "../images/times/fundos/bitter-bug.svg";
+            break;
+
+        case "green":
+            bg.src = "../images/times/fundos/green-ferret.svg";
+            break;
+
+        case "lemon":
+            bg.src = "../images/times/fundos/lemon-viper.svg";
+            break;
+
+        case "orange":
+            bg.src = "../images/times/fundos/orange-lynx.svg";
+            break;
+
+        case "pink":
+            bg.src = "../images/times/fundos/pink-otter.svg";
+            break;
+
+        case "purple":
+            bg.src = "../images/times/fundos/purple-raccoon.svg";
+            break;
+
+        case "red":
+            bg.src = "../images/times/fundos/red-panda.svg";
+            break;
+
+        case "sunset":
+            bg.src = "../images/times/fundos/sunset-wolf.svg";
+            break;
+    }
+}

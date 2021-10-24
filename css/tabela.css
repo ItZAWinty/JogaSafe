@@ -1,43 +1,34 @@
-#container{
-    height: 100vh;
-    width: 100vw;
-    background-color: #242424;
-    background-image: url("../images/bgs/vector-fire.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+#capa .section-bg{
+    object-fit: contain;
 }
-.tabela{
-    position: absolute;
-    top:15%
+
+th,td{
+    text-align:center;
+    vertical-align: middle;
+    height: 10vh;
 }
-#containerdois{
-    height: 100vh;
-    width: 100vw;
-    background-color: #242424;
-    background-image: url("../images/bgs/vector-fire.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 table{ 
-    border-collapse: collapse;
-    margin: auto;
-    padding: 100px;
+    height: 90vh;
     width: 70%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 th{
-    height: 60px;
-    text-align:center;
+    font-family:"Druk Wide Bold";
+    font-size:4vh;
     color:#B10027;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:30px;
-    border-bottom: 5px solid #B10027;
-    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1vh solid #B10027;
 }
+
 td{
-    text-align: center;
-    text-align:center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:3.5vh;
+    font-weight: bold;
     color:white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:30px;
-    background-color: rgba(0, 0, 0, 0.3);
 }
+
+td>img{
+    height: 100%;
+    object-fit: contain;
+}
+

@@ -7,22 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/times.css">
 
-    <title>Joga Safe TNT</title>
+    <title>Times - Joga Safe</title>
 </head>
 
 <body>
     <div id="container">
-        <div class="sidebar">
+        <div id="menu" class=" ">
+            <div>
+                <a class="menu-item text-stroke" href="../index.html">Início</a>
+                <a class="menu-item text-stroke" href="times.html">Times</a>
+                <a class="menu-item text-stroke" href="tabela.html">Tabela</a>
+                <a class="menu-item text-stroke" href="contato.html">Contato</a>
+            </div>
+
+            <div class="gradient-content"></div>
+        </div>
+
+        <div class="sidebar" id="navbar">
 
             <div id="bar-top">
                 <ul>
-                    <li>
-                        <a id="menu-button">
+                    <li><a id="navbar-button" onclick="MenuButton()">
                             <div></div>
-                        </a>
-                    </li>
+                        </a></li>
                     <li>Joga Safe</li>
                     <li>
                         <div id="star"></div>
@@ -37,27 +47,59 @@
                     <li>
                         <div id="star"></div>
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com/tntenergydrink/" target="_blank">
+                    <li><a href="https://www.facebook.com/tntenergydrink/" target="_blank">
                             <div id="facebook"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/tntenergydrink/?hl=pt-br" target="_blank">
+                        </a></li>
+                    <li><a href="https://www.instagram.com/tntenergydrink/?hl=pt-br" target="_blank">
                             <div id="instagram"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/energydrinktnt" target="_blank">
+                        </a></li>
+                    <li><a href="https://twitter.com/energydrinktnt" target="_blank">
                             <div id="twitter"></div>
-                        </a>
-                    </li>
+                        </a></li>
                 </ul>
             </div>
 
             <a id="down-button" onclick="goToNextSection()">
                 <div></div>
             </a>
+        </div>
+
+        <div class="sidebar" id="balls">
+            <div>
+                <a id="ball-capa" class="ball-disabled" onclick="goToNextSection(true, 'capa')">
+                    <div></div>
+                </a>
+                <a id="ball-bitter" class="ball-disabled" onclick="goToNextSection(true, 'bitter')">
+                    <div></div>
+                </a>
+                <a id="ball-green" class="ball-disabled" onclick="goToNextSection(true, 'green')">
+                    <div></div>
+                </a>
+                <a id="ball-lemon" class="ball-disabled" onclick="goToNextSection(true, 'lemon')">
+                    <div></div>
+                </a>
+                <a id="ball-orange" class="ball-disabled" onclick="goToNextSection(true, 'orange')">
+                    <div></div>
+                </a>
+                <a id="ball-pink" class="ball-disabled" onclick="goToNextSection(true, 'pink')">
+                    <div></div>
+                </a>
+                <a id="ball-purple" class="ball-disabled" onclick="goToNextSection(true, 'purple')">
+                    <div></div>
+                </a>
+                <a id="ball-red" class="ball-disabled" onclick="goToNextSection(true, 'red')">
+                    <div></div>
+                </a>
+                <a id="ball-sunset" class="ball-disabled" onclick="goToNextSection(true, 'sunset')">
+                    <div></div>
+                </a>
+                <a id="ball-patrocinios" class="ball-disabled" onclick="goToNextSection(true, 'patrocinios')">
+                    <div></div>
+                </a>
+                <a id="ball-footer" class="ball-disabled" onclick="goToNextSection(true, 'footer')">
+                    <div></div>
+                </a>
+            </div>
         </div>
 
         <main>
@@ -71,17 +113,15 @@
 
                 </section>
 
-                <section id="bitter">
+                <section id="bitter" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Bitter Bug
+                                Bitter Bug<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                O Bitter Bug é forte e saudável, não consumindo açúcar. O pequeno inseto está sempre pronto para proteger seus amigos utilizando os seus músculos, obtidos treinando nas ruas, fazendo com que ele fosse um dos animais mais fortes do reino animal, podendo levantar até 100 vezes o peso de seu corpo, assim como algumas espécies de formiga.
                             </p>
                         </div>
 
@@ -89,17 +129,16 @@
                     </div>
 
                 </section>
-                <section id="green">
+
+                <section id="green" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Green Ferret
+                                Green Ferret<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Energético, sempre disposto a alegrar qualquer um com suas brincadeiras bobas, buscando um riso em todas as faces tristes.
                             </p>
                         </div>
 
@@ -108,17 +147,15 @@
 
                 </section>
 
-                <section id="lemon">
+                <section id="lemon" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Lemon Viper
+                                Lemon Viper<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Embora muitos tenham medo de um animal venenoso representando uma fruta ácida, a nossa querida cobrinha é gentil e combina com qualquer gosto, assim como o limão pode complementar qualquer bebida ou alimento. Porém, caso alguém seja agressivo com qualquer colega, ela mostra sua face de víbora, juntamente com toda a sua acidez, buscando defender seus amigos.
                             </p>
                         </div>
 
@@ -127,17 +164,15 @@
 
                 </section>
 
-                <section id="orange">
+                <section id="orange" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Orange Lynx
+                                Orange Lynx<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Pensando na cor laranja e remetendo-a ao pôr-do-sol, pensamos em um lince explorador, sempre pronto para explorar novos horizontes iluminados pela grande estrela. Buscando lugares mais calmos e divertidos, adora se divertir caminhando com seus amigos.
                             </p>
                         </div>
 
@@ -145,17 +180,16 @@
                     </div>
 
                 </section>
-                <section id="pink">
+
+                <section id="pink" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Pink Otter
+                                Pink Otter<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Calmo e tímido, mas um bom conselheiro. Sempre fofo e carinhoso com seus amigos, amenizando conflitos com abraços suaves, assim como as lontras gostam de abraçar objetos.
                             </p>
                         </div>
 
@@ -164,17 +198,15 @@
 
                 </section>
 
-                <section id="purple">
+                <section id="purple" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Purple Raccoon
+                                Purple Raccoon<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Brincalhão, mas preguiçoso, o pequeno guaxinim ama alegrar seus amigos dividindo deliciosas guloseimas. Sua franja é um cacho de uvas, que raramente está completo, já que o animal esfomeado acaba comendo as frutas.
                             </p>
                         </div>
 
@@ -183,17 +215,15 @@
 
                 </section>
 
-                <section id="red">
+                <section id="red" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Red Panda
+                                Red Panda<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Um aventureiro brincalhão, sempre disposto a qualquer brincadeira divertida, misturando diversos gostos, assim como o sabor mistura o açaí com o guaraná.
                             </p>
                         </div>
 
@@ -202,17 +232,15 @@
 
                 </section>
 
-                <section id="sunset">
+                <section id="sunset" class="team-section">
 
                     <div class="section-content">
                         <div class="section-left">
                             <h1>
-                                Sunset Wolf
+                                Sunset Wolf<span><img class="star-text" src="../images/icons/icon-star.svg"></span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita perferendis laborum magni minima temporibus doloribus, quisquam itaque, voluptatem animi, perspiciatis vel laudantium ducimus excepturi exercitationem mollitia pariatur inventore
-                                fugit?
-
+                                Assim como o Lince, pensamos na cor laranja remetendo ao pôr-do-sol, porém nosso amigável lobo prefere aproveitá-lo descansando em uma piscina, tomando uma bebida gelada. O animal está sempre disposto a descansar com seus amigos aproveitando o verão.
                             </p>
                         </div>
 
@@ -221,12 +249,11 @@
 
                 </section>
 
-
-
-
                 <section id="patrocinios">
 
                     <div class="section-content">
+                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
+
                         <div class="section-left">
                             <h1 class="text-stroke">
                                 Patrocinado por
@@ -234,18 +261,20 @@
                             </h1>
 
                             <div id="patrocinios-flex">
-                                <a href="https://www.facebook.com/tntenergydrink/" target="_blank"><img src="../images/logos/logo1-driven.png" alt=""></a>
-                                <a href="https://www.tntenergydrink.com.br/" target="_blank"><img src="../images/logos/logo-tnt.svg" alt=""></a>
-                                <a href="https://www.fiap.com.br/" target="_blank"><img src="../images/logos/logo-fiap.svg" alt=""></a>
+                                <a href="https://www.facebook.com/tntenergydrink/" target="_blank">
+                                    <img src="../images/logos/logo1-driven.png" alt="">
+                                </a>
+                                <a href="https://www.tntenergydrink.com.br/" target="_blank">
+                                    <img src="../images/logos/logo-tnt.svg" alt="">
+                                </a>
+                                <a href="https://www.fiap.com.br/" target="_blank">
+                                    <img src="../images/logos/logo-fiap.svg" alt="">
+                                </a>
                             </div>
                         </div>
-
-                        <img class="logo-jogasafe" src="../images/logos/logo-jogasafe.png">
                     </div>
 
                 </section>
-
-
 
                 <section id="footer">
 
@@ -258,10 +287,10 @@
                         <div class="footer-bottom">
                             <div class="footer-element">
                                 <img src="../images/icons/icon-star.svg">
-                                <a>Início</a>
-                                <a>Equipes</a>
-                                <a>Tabela</a>
-                                <a>Contato</a>
+                                <a href="../index.html">Início</a>
+                                <a href="./times.html">Times</a>
+                                <a href="./tabela.html">Tabela</a>
+                                <a href="./contato.html">Contato</a>
                             </div>
 
                             <div class="footer-element">
@@ -286,7 +315,7 @@
 
             </div>
 
-            <div id="gradient-content"></div>
+            <div class="gradient-content"></div>
 
         </main>
 
@@ -294,7 +323,7 @@
 
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/times.js"></script>
 
