@@ -13,7 +13,6 @@ let menuMoving = false;
 let hasBeenOpened = false;
 
 function MenuButton(){
-    console.log("teste")
     
     if(!menuMoving){
         menuMoving = true;
@@ -23,8 +22,6 @@ function MenuButton(){
             menu.style.width = "100vw";
             ChangeMenuState("off")
         }
-
-        console.log(menu.classList)
 
         if(menu.classList.contains("menu-off") || (menu.classList[0] == null && !hasBeenOpened)){
             hasBeenOpened = true;

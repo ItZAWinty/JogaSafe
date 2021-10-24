@@ -4,7 +4,6 @@ const bg = document.querySelector("#bg-fire");
 const sectionWatcherCallbackTimes = (section, sectionIndex) => {
     section.forEach(section => {
         if (!section.isIntersecting) { return }
-        console.log(section.target.id)
         changeBG(section.target.id)
     })
 }
