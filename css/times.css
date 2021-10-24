@@ -246,6 +246,94 @@ section {
     object-fit: contain;
 }
 
+#bitter h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#green h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#lemon h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#orange h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#pink h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#purple h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#red h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#sunset h1 {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+#bitter p {
+    font-size: 1.5vw;
+}
+
+#green p {
+    font-size: 1.5vw;
+}
+
+#lemon p {
+    font-size: 1.5vw;
+}
+
+#orange p {
+    font-size: 1.5vw;
+}
+
+#pink p {
+    font-size: 1.5vw;
+}
+
+#purple p {
+    font-size: 1.5vw;
+}
+
+#red p {
+    font-size: 1.5vw;
+}
+
+#sunset p {
+    font-size: 1.5vw;
+}
+
 #campeonato h1 {
     font-size: 2.5vw;
 }
@@ -326,65 +414,6 @@ section {
     width: 11vw;
     height: auto;
     filter: blur(5px);
-}
-
-#inscricao .section-content {
-    width: 91vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.inscricao-panel {
-    width: 20vw;
-    height: 70vh;
-    border-top: 1vh solid #DC0031;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
-    padding: 2%;
-    color: #DC0031;
-}
-
-.inscricao-aberta {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5vh;
-}
-
-#inscricao h2 {
-    font-size: 1.3vw;
-    padding: 4vh 0px;
-}
-
-#inscricao-infos {
-    flex-grow: 2;
-    padding-bottom: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#inscricao a {
-    border: 1px solid #DC0031;
-    padding: 2%;
-    width: 70%;
-    align-self: center;
-    text-align: center;
-}
-
-.inscricao-fechada h2 {
-    font-size: 3vw !important;
-    text-align: center;
-}
-
-#breve h1 {
-    font-size: 7vw;
-    background: linear-gradient(90deg, rgba(255, 114, 83, 1) 0%, rgba(242, 0, 0, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.2vw #8B1826;
 }
 
 #footer>.section-content {
