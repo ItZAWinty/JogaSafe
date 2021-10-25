@@ -615,17 +615,186 @@ section{
 
 @media only screen and (max-width: 768px){
     
-    .section-content{
-        display: flex;
-        flex-direction: column;
+    #social-bar>ul>li div, #bar-top>ul>li div, #down-button>div{
+        width: auto;
+        background-size: cover;
     }
 
-    .section-left{
-        float: none;
+    #down-button>div{
+        background-size: 95%;
+    }
+
+    
+    #balls a{
+        border: 1px solid #DC0031;
+    }
+
+    /* #region Sections Geral */
+    .section-content{
+        height: 100vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
     }
 
     .logo-jogasafe{
-        float: none;
+        display: block;
+        position: static;
+        left: 0;
+        margin: 0;
     }
+    
+    .section-left{
+        position: static;
+        width: 80%;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    /* #endregion */
+
+    /* #region Capa */
+    #capa{
+        height: auto;
+    }
+
+    #capa .section-bg{
+        position: static;
+        width: 100%;
+        height: auto;
+        left: 0;
+        background-image: url("images/bgs/bg-capa.png");
+    }
+    /* #endregion */
+
+    /* #region Campeonato */
+    #campeonato h1{
+        font-size: 5vw;
+    }
+    /* #endregion */
+
+    /* #region Como Funciona */
+    #como-funciona h1{
+        font-size: 5vw;
+    }
+    #como-funciona p{
+        font-size: 3vw;
+    }
+    /* #endregion */
+
+    /* #region Patrocínios */
+    #patrocinios h1{
+        font-size: 4vw;
+    }
+    .star-text{
+        height: 4vw;
+    }
+    /* #endregion */
+
+    /* #region Teaser */
+    #teaser .section-bg{
+        position: static;
+        left: 0;
+        right: 0;
+        width: 96vw;
+        height: auto;
+    }
+
+    #teaser .section-content{
+        height: 40vh;
+    }
+    /* #endregion */
+
+    /* #region Times */
+    .text-bg{
+        object-fit: contain;
+        left: 0;
+        right: 0;
+        width: 100vw;
+    }
+
+    #times h1{
+        width: 70vw;
+        font-size: 2.5vw;
+        letter-spacing: 2.5vw;
+        text-align: center;
+    }
+    
+    .teams-list{
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    
+    .team-logo{
+        width: 40%;
+    }
+    /* #endregion */
+
+    /* #region Inscrição */
+    #inscricao .section-content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .inscricao-panel{
+        width: 70%;
+    }
+
+    .inscricao-aberta{
+        height: 60%;
+    }
+
+    .inscricao-aberta h2{
+        font-size: 5vw !important;
+    }
+
+    .inscricao-fechada{
+        height: 5%;
+    }
+    /* #endregion */
+
+    /* #region Footer */
+
+    #footer .section-content{
+        justify-content: center;
+    }
+
+    #footer-text h1,#footer-text h2{
+        width: 60%;
+        margin: auto;
+    }
+
+    #footer h1{
+        font-size: 8.5vw;
+        width: 90%;
+    }
+
+    #footer h2{
+        font-size: 3.5vw;
+        width: 90%;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+    .footer-element{
+        height: 60%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-element img{
+        width: 5%;
+    }
+
+
+
+    /* #endregion */
 
 }

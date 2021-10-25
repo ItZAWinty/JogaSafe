@@ -32,3 +32,22 @@ td>img{
     object-fit: contain;
 }
 
+@media only screen and (max-width: 768px){
+
+    #capa .section-content{
+        height: 0;
+    }
+
+    table{
+        width: 80%;
+        border-bottom: 0.5vh solid #B10027;
+    }
+
+    th{
+        font-size: 3vw;
+    }
+
+    td{
+        font-size: 2vw;
+    }
+}

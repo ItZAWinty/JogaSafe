@@ -67,7 +67,6 @@ form label{
     font-family: 'Fira Sans', sans-serif;
 }
 
-
 form input{
     height: 4vh;
 }
@@ -78,4 +77,39 @@ form input{
     border: transparent;
     text-shadow: none;
     font-family:"Druk-WideMedium";
+}
+
+@media only screen and (max-width: 768px){
+
+    #contato .section-content{
+        height: 100vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    #entre-contato{
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-right{
+        width: 80%;
+    }
+
+    #contact-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #contact-content h1{
+        font-size: 2.5vw;
+    }
+
+    form label{
+        font-size: 2.5vw;
+    }
 }

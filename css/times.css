@@ -18,3 +18,30 @@
     margin-right: 1vw;
     margin-bottom: 3vh;
 }
+
+@media only screen and (max-width: 768px){
+
+    #capa .section-content{
+        height: 0;
+    }
+
+    .section-content{
+        justify-content: center;
+    }
+
+    .logo-jogasafe{
+        width: 70%;
+    }
+
+    .team-section h1{
+        font-size: 4vw;
+    }
+
+    .team-section p {
+        font-size: 2.5vw;
+    }  
+    
+    #patrocinios h1{
+        font-size: 4vw;
+    }
+}
