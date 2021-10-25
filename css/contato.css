@@ -79,7 +79,7 @@ form input{
     font-family:"Druk-WideMedium";
 }
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
     #contato .section-content{
         height: 100vh;

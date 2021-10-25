@@ -613,7 +613,7 @@ section{
 
 /* #endregion */
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     
     #social-bar>ul>li div, #bar-top>ul>li div, #down-button>div{
         width: auto;
