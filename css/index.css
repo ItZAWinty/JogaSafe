@@ -657,7 +657,7 @@ section{
 
     /* #region Capa */
     #capa{
-        height: auto;
+        height: 45vh;
     }
 
     #capa .section-bg{
